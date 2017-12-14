@@ -2,7 +2,6 @@ package com.sf.bgp.common;
 
 import io.codis.jodis.JedisResourcePool;
 import io.codis.jodis.RoundRobinJedisPool;
-import org.apache.commons.lang3.time.DateFormatUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
@@ -74,9 +73,9 @@ public class JodisUtils implements InitializingBean{
         }
     }
 
-    public String getLockKey(String methodName){
+    /*public String getLockKey(String methodName){
         return DateFormatUtils.format(new Date(),"yyyyMMddHHmm") + methodName;
-    }
+    }*/
 
     public void close(Jedis jedis){
         if (jedis != null){

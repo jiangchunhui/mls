@@ -77,6 +77,10 @@
 			<artifactId>jodis</artifactId>
 			<version>${io_jodis.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
 	</dependencies>
 	
 	<repositories>
