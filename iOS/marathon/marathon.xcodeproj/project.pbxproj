@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D37857BED02B8FE40E46AC02 /* libPods-marathon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40683D8F28805C426E7CF159 /* libPods-marathon.a */; };
+		EA13FAE71FE22ADE004301D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FAE61FE22ADE004301D9 /* AppDelegate.m */; };
+		EA13FAF01FE22ADE004301D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA13FAEE1FE22ADE004301D9 /* Main.storyboard */; };
+		EA13FAF21FE22ADE004301D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA13FAF11FE22ADE004301D9 /* Assets.xcassets */; };
+		EA13FAF51FE22ADE004301D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA13FAF31FE22ADE004301D9 /* LaunchScreen.storyboard */; };
+		EA13FAF81FE22ADE004301D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FAF71FE22ADE004301D9 /* main.m */; };
+		EA13FB021FE22ADE004301D9 /* marathonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB011FE22ADE004301D9 /* marathonTests.m */; };
+		EA13FB0D1FE22ADE004301D9 /* marathonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB0C1FE22ADE004301D9 /* marathonUITests.m */; };
+		EA13FB211FE267C3004301D9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB1E1FE267C3004301D9 /* FirstViewController.m */; };
+		EA13FB221FE267C3004301D9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB1F1FE267C3004301D9 /* SecondViewController.m */; };
+		EA13FB251FE26810004301D9 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB241FE26810004301D9 /* PersonalViewController.m */; };
+		EA13FB281FE2681D004301D9 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB271FE2681D004301D9 /* ThirdViewController.m */; };
+		EA13FB2B1FE269B7004301D9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB2A1FE269B7004301D9 /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA13FAFE1FE22ADE004301D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA13FADA1FE22ADE004301D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA13FAE11FE22ADE004301D9;
+			remoteInfo = marathon;
+		};
+		EA13FB091FE22ADE004301D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA13FADA1FE22ADE004301D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA13FAE11FE22ADE004301D9;
+			remoteInfo = marathon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40683D8F28805C426E7CF159 /* libPods-marathon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-marathon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		898A90DF39FEFEAA8A25AD33 /* Pods-marathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-marathon/Pods-marathon.release.xcconfig"; sourceTree = "<group>"; };
+		8A6970412074ADA43CA4DA0F /* Pods-marathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-marathon/Pods-marathon.debug.xcconfig"; sourceTree = "<group>"; };
+		EA13FAE21FE22ADE004301D9 /* marathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA13FAE51FE22ADE004301D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA13FAE61FE22ADE004301D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA13FAEF1FE22ADE004301D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA13FAF11FE22ADE004301D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA13FAF41FE22ADE004301D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA13FAF61FE22ADE004301D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA13FAF71FE22ADE004301D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA13FAFD1FE22ADE004301D9 /* marathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA13FB011FE22ADE004301D9 /* marathonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = marathonTests.m; sourceTree = "<group>"; };
+		EA13FB031FE22ADE004301D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA13FB081FE22ADE004301D9 /* marathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA13FB0C1FE22ADE004301D9 /* marathonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = marathonUITests.m; sourceTree = "<group>"; };
+		EA13FB0E1FE22ADE004301D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA13FB1C1FE267C3004301D9 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		EA13FB1D1FE267C3004301D9 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		EA13FB1E1FE267C3004301D9 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		EA13FB1F1FE267C3004301D9 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		EA13FB231FE26810004301D9 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
+		EA13FB241FE26810004301D9 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		EA13FB261FE2681D004301D9 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		EA13FB271FE2681D004301D9 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		EA13FB291FE269B7004301D9 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		EA13FB2A1FE269B7004301D9 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA13FADF1FE22ADE004301D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37857BED02B8FE40E46AC02 /* libPods-marathon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA13FAFA1FE22ADE004301D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA13FB051FE22ADE004301D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76E92158B17D82ACBC2E9CF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40683D8F28805C426E7CF159 /* libPods-marathon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D146CD510AE8A4348C5743F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A6970412074ADA43CA4DA0F /* Pods-marathon.debug.xcconfig */,
+				898A90DF39FEFEAA8A25AD33 /* Pods-marathon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA13FAD91FE22ADE004301D9 = {
+			isa = PBXGroup;
+			children = (
+				EA13FAE41FE22ADE004301D9 /* marathon */,
+				EA13FB001FE22ADE004301D9 /* marathonTests */,
+				EA13FB0B1FE22ADE004301D9 /* marathonUITests */,
+				EA13FAE31FE22ADE004301D9 /* Products */,
+				D146CD510AE8A4348C5743F3 /* Pods */,
+				76E92158B17D82ACBC2E9CF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA13FAE31FE22ADE004301D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA13FAE21FE22ADE004301D9 /* marathon.app */,
+				EA13FAFD1FE22ADE004301D9 /* marathonTests.xctest */,
+				EA13FB081FE22ADE004301D9 /* marathonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA13FAE41FE22ADE004301D9 /* marathon */ = {
+			isa = PBXGroup;
+			children = (
+				EA13FB1B1FE267C3004301D9 /* Controllers */,
+				EA13FB201FE267C3004301D9 /* Models */,
+				EA13FB1A1FE267C3004301D9 /* Views */,
+				EA13FAE51FE22ADE004301D9 /* AppDelegate.h */,
+				EA13FAE61FE22ADE004301D9 /* AppDelegate.m */,
+				EA13FAEE1FE22ADE004301D9 /* Main.storyboard */,
+				EA13FAF11FE22ADE004301D9 /* Assets.xcassets */,
+				EA13FAF31FE22ADE004301D9 /* LaunchScreen.storyboard */,
+				EA13FAF61FE22ADE004301D9 /* Info.plist */,
+				EA13FAF71FE22ADE004301D9 /* main.m */,
+			);
+			path = marathon;
+			sourceTree = "<group>";
+		};
+		EA13FB001FE22ADE004301D9 /* marathonTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA13FB011FE22ADE004301D9 /* marathonTests.m */,
+				EA13FB031FE22ADE004301D9 /* Info.plist */,
+			);
+			path = marathonTests;
+			sourceTree = "<group>";
+		};
+		EA13FB0B1FE22ADE004301D9 /* marathonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA13FB0C1FE22ADE004301D9 /* marathonUITests.m */,
+				EA13FB0E1FE22ADE004301D9 /* Info.plist */,
+			);
+			path = marathonUITests;
+			sourceTree = "<group>";
+		};
+		EA13FB1A1FE267C3004301D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA13FB1B1FE267C3004301D9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA13FB1C1FE267C3004301D9 /* FirstViewController.h */,
+				EA13FB1E1FE267C3004301D9 /* FirstViewController.m */,
+				EA13FB1D1FE267C3004301D9 /* SecondViewController.h */,
+				EA13FB1F1FE267C3004301D9 /* SecondViewController.m */,
+				EA13FB261FE2681D004301D9 /* ThirdViewController.h */,
+				EA13FB271FE2681D004301D9 /* ThirdViewController.m */,
+				EA13FB231FE26810004301D9 /* PersonalViewController.h */,
+				EA13FB241FE26810004301D9 /* PersonalViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA13FB201FE267C3004301D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA13FB291FE269B7004301D9 /* Person.h */,
+				EA13FB2A1FE269B7004301D9 /* Person.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA13FAE11FE22ADE004301D9 /* marathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA13FB111FE22ADE004301D9 /* Build configuration list for PBXNativeTarget "marathon" */;
+			buildPhases = (
+				B1FF56A008E4B05BD70A1543 /* [CP] Check Pods Manifest.lock */,
+				EA13FADE1FE22ADE004301D9 /* Sources */,
+				EA13FADF1FE22ADE004301D9 /* Frameworks */,
+				EA13FAE01FE22ADE004301D9 /* Resources */,
+				C0D5BD7A389F22B5C86C532A /* [CP] Embed Pods Frameworks */,
+				E8CD0827C0E2047FA0D565DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = marathon;
+			productName = marathon;
+			productReference = EA13FAE21FE22ADE004301D9 /* marathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA13FAFC1FE22ADE004301D9 /* marathonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA13FB141FE22ADE004301D9 /* Build configuration list for PBXNativeTarget "marathonTests" */;
+			buildPhases = (
+				EA13FAF91FE22ADE004301D9 /* Sources */,
+				EA13FAFA1FE22ADE004301D9 /* Frameworks */,
+				EA13FAFB1FE22ADE004301D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA13FAFF1FE22ADE004301D9 /* PBXTargetDependency */,
+			);
+			name = marathonTests;
+			productName = marathonTests;
+			productReference = EA13FAFD1FE22ADE004301D9 /* marathonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA13FB071FE22ADE004301D9 /* marathonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA13FB171FE22ADE004301D9 /* Build configuration list for PBXNativeTarget "marathonUITests" */;
+			buildPhases = (
+				EA13FB041FE22ADE004301D9 /* Sources */,
+				EA13FB051FE22ADE004301D9 /* Frameworks */,
+				EA13FB061FE22ADE004301D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA13FB0A1FE22ADE004301D9 /* PBXTargetDependency */,
+			);
+			name = marathonUITests;
+			productName = marathonUITests;
+			productReference = EA13FB081FE22ADE004301D9 /* marathonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA13FADA1FE22ADE004301D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = peoeleSameWay;
+				TargetAttributes = {
+					EA13FAE11FE22ADE004301D9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EA13FAFC1FE22ADE004301D9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA13FAE11FE22ADE004301D9;
+					};
+					EA13FB071FE22ADE004301D9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA13FAE11FE22ADE004301D9;
+					};
+				};
+			};
+			buildConfigurationList = EA13FADD1FE22ADE004301D9 /* Build configuration list for PBXProject "marathon" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA13FAD91FE22ADE004301D9;
+			productRefGroup = EA13FAE31FE22ADE004301D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA13FAE11FE22ADE004301D9 /* marathon */,
+				EA13FAFC1FE22ADE004301D9 /* marathonTests */,
+				EA13FB071FE22ADE004301D9 /* marathonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA13FAE01FE22ADE004301D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA13FAF51FE22ADE004301D9 /* LaunchScreen.storyboard in Resources */,
+				EA13FAF21FE22ADE004301D9 /* Assets.xcassets in Resources */,
+				EA13FAF01FE22ADE004301D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA13FAFB1FE22ADE004301D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA13FB061FE22ADE004301D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1FF56A008E4B05BD70A1543 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D5BD7A389F22B5C86C532A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-marathon/Pods-marathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CD0827C0E2047FA0D565DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-marathon/Pods-marathon-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-marathon/Pods-marathon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA13FADE1FE22ADE004301D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA13FB221FE267C3004301D9 /* SecondViewController.m in Sources */,
+				EA13FAE71FE22ADE004301D9 /* AppDelegate.m in Sources */,
+				EA13FB2B1FE269B7004301D9 /* Person.m in Sources */,
+				EA13FB281FE2681D004301D9 /* ThirdViewController.m in Sources */,
+				EA13FB211FE267C3004301D9 /* FirstViewController.m in Sources */,
+				EA13FB251FE26810004301D9 /* PersonalViewController.m in Sources */,
+				EA13FAF81FE22ADE004301D9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA13FAF91FE22ADE004301D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA13FB021FE22ADE004301D9 /* marathonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA13FB041FE22ADE004301D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA13FB0D1FE22ADE004301D9 /* marathonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA13FAFF1FE22ADE004301D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA13FAE11FE22ADE004301D9 /* marathon */;
+			targetProxy = EA13FAFE1FE22ADE004301D9 /* PBXContainerItemProxy */;
+		};
+		EA13FB0A1FE22ADE004301D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA13FAE11FE22ADE004301D9 /* marathon */;
+			targetProxy = EA13FB091FE22ADE004301D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA13FAEE1FE22ADE004301D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA13FAEF1FE22ADE004301D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA13FAF31FE22ADE004301D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA13FAF41FE22ADE004301D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA13FB0F1FE22ADE004301D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA13FB101FE22ADE004301D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA13FB121FE22ADE004301D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6970412074ADA43CA4DA0F /* Pods-marathon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94474947CR;
+				INFOPLIST_FILE = marathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peoeleSameWay.marathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA13FB131FE22ADE004301D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898A90DF39FEFEAA8A25AD33 /* Pods-marathon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94474947CR;
+				INFOPLIST_FILE = marathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peoeleSameWay.marathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA13FB151FE22ADE004301D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94474947CR;
+				INFOPLIST_FILE = marathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peoeleSameWay.marathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marathon.app/marathon";
+			};
+			name = Debug;
+		};
+		EA13FB161FE22ADE004301D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94474947CR;
+				INFOPLIST_FILE = marathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peoeleSameWay.marathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marathon.app/marathon";
+			};
+			name = Release;
+		};
+		EA13FB181FE22ADE004301D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94474947CR;
+				INFOPLIST_FILE = marathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peoeleSameWay.marathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = marathon;
+			};
+			name = Debug;
+		};
+		EA13FB191FE22ADE004301D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94474947CR;
+				INFOPLIST_FILE = marathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peoeleSameWay.marathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = marathon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA13FADD1FE22ADE004301D9 /* Build configuration list for PBXProject "marathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA13FB0F1FE22ADE004301D9 /* Debug */,
+				EA13FB101FE22ADE004301D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA13FB111FE22ADE004301D9 /* Build configuration list for PBXNativeTarget "marathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA13FB121FE22ADE004301D9 /* Debug */,
+				EA13FB131FE22ADE004301D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA13FB141FE22ADE004301D9 /* Build configuration list for PBXNativeTarget "marathonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA13FB151FE22ADE004301D9 /* Debug */,
+				EA13FB161FE22ADE004301D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA13FB171FE22ADE004301D9 /* Build configuration list for PBXNativeTarget "marathonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA13FB181FE22ADE004301D9 /* Debug */,
+				EA13FB191FE22ADE004301D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA13FADA1FE22ADE004301D9 /* Project object */;
+}

@@ -1,0 +1,12 @@
+platform :ios, "8.0"
+
+
+target 'marathon’ do
+
+pod 'AFNetworking'
+pod 'FMDB'
+pod 'IQKeyboardManager'
+pod 'MBProgressHUD'
+pod 'YYModel'
+
+end
