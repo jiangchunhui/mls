@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd 
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd 
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd 
+	">
+	
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="${mysql.jdbc.url}" />
+		<property name="username" value="${mysql.jdbc.username}" />
+		<property name="password" value="${mysql.jdbc.password}" />
+		
+		<property name="maxActive" value="${maxActive}" />
+        <property name="initialSize" value="${initialSize}" /> 
+        <property name="maxWait" value="${maxWait}" />
+        <property name="minIdle" value="${minIdle}" />
+        
+		<property name="validationQuery" value="${validationQuery}" />  
+        <property name="testWhileIdle" value="${testWhileIdle}" />  
+        <property name="testOnBorrow" value="${testOnBorrow}" />  
+        <property name="testOnReturn" value="${testOnReturn}" />
+        <!-- 配置连接闲置时间，单位是毫秒  申请连接时检查连接是否闲置超时时用到该参数 -->
+        <property name="timeBetweenEvictionRunsMillis" value="${timeBetweenEvictionRunsMillis}" />
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="${minEvictableIdleTimeMillis}" />    
+        
+        <!-- 打开removeAbandoned功能 对于长时间不使用的连接强制关闭 -->
+        <!--property name="removeAbandoned" value="${removeAbandoned}" /-->
+        <!-- 1800秒，也就是连接超过30分钟未关闭则开始关闭连接 -->
+        <!--property name="removeAbandonedTimeout" value="${removeAbandonedTimeout}" /-->
+        <!-- 关闭abanded连接时输出错误日志 -->
+        <!--property name="logAbandoned" value="${logAbandoned}" /-->
+	</bean>
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="mapperLocations" value="classpath*:/sqlmap/db/**/*Mapper.xml" />
+		<property name="dataSource" ref="dataSource" />
+		<property name="typeAliasesPackage" value="com.sf.bgp.dao.domain" />
+	</bean>
+	
+	<!-- ScanMapperFiles -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.sf.bgp.dao.mapper" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+	</bean>
+	
+</beans>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.sf.sgs</groupId>
+		<artifactId>sgs-push-core-sms</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>sgs-push-core-sms-client</artifactId>
+	<name>push-core-sms-client</name>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.sf.sgs</groupId>
+			<artifactId>sgs-framework-boot-common</artifactId>
+		</dependency>
+		<!-- add hibernate valiator -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator-annotation-processor</artifactId>
+		</dependency>
+		<dependency>  
+		    <groupId>com.fasterxml.jackson.core</groupId>  
+		    <artifactId>jackson-annotations</artifactId>  
+		</dependency>
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+        </dependency>
+
+	</dependencies>
+
+</project>

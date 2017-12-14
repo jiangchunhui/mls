@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<layout class="com.sf.sgs.sflog.log4j.layout.SfPatternLayout"/>
+	</appender>
+
+
+	<appender name="SF.SYSTEM" class="com.sf.sgs.sflog.log4j.appender.SFDailyRollingFileAppender">
+		<param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/system.log" />
+		<param name="maxBackupIndex" value="2" />
+		<!--<param name="bufferedIO" value="true" />
+		<param name="bufferSize" value="4096" />-->
+		<layout class="com.sf.sgs.sflog.log4j.layout.SfPatternLayout">
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="levelMin" value="trace" />
+			<param name="levelMax" value="info" />
+			<param name="acceptOnMatch" value="true" />
+		</filter>
+	</appender>
+
+	<appender name="SF.BIZ" class="com.sf.sgs.sflog.log4j.appender.SFDailyRollingFileAppender">
+		<param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/biz.log" />
+		<param name="maxBackupIndex" value="2" />
+		<!--<param name="bufferedIO" value="true" />
+		<param name="bufferSize" value="4096" />-->
+		<layout class="com.sf.sgs.sflog.log4j.layout.SfPatternLayout" >
+		</layout>
+	</appender>
+
+	<appender name="SF.ERROR" class="com.sf.sgs.sflog.log4j.appender.SFDailyRollingFileAppender">
+		<param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/error.log" />
+		<param name="maxBackupIndex" value="2" />
+		<layout class="com.sf.sgs.sflog.log4j.layout.SfPatternLayout">
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="levelMin" value="warn" />
+			<param name="levelMax" value="error" />
+			<param name="acceptOnMatch" value="true" />
+		</filter>
+	</appender>
+
+
+
+	<logger name="SF.SYSTEM" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="SF.SYSTEM" />
+		<!--		<appender-ref ref="SF.SYSTEM.KAFKA" /> -->
+		<appender-ref ref="SF.ERROR" />
+		<!--		<appender-ref ref="SF.ERROR.KAFKA" />-->
+	</logger>
+
+	<logger name="SF.BIZ" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="SF.BIZ" />
+		<!--<appender-ref ref="SF.BIZ.KAFKA" />-->
+	</logger>
+
+
+
+	<logger name="org.apache" additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="console" />
+	</logger>
+
+
+
+
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="SF.SYSTEM" />
+		<appender-ref ref="SF.ERROR" />
+		<appender-ref ref="console" />
+	</root>
+</log4j:configuration>

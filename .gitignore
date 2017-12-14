@@ -1,0 +1,14 @@
+.settings/
+.myeclipse/
+.gradle/
+target/
+*/.settings
+*/.classpath
+*/.project
+.classpath
+.project
+.idea/
+.svn/
+.vscode/
+.externalToolBuilders/
+gradle/
