@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Group implements Serializable{
 	private long id;
-	private String market_id; // 用户名
+	private long market_id; // 用户名
 	private String group_name;//集货团显示名
 	private int current_count;//当前数量
 	private Date start_time;//开始时间
@@ -23,11 +23,11 @@ public class Group implements Serializable{
 		this.id = id;
 	}
 
-	public String getMarket_id() {
+	public long getMarket_id() {
 		return market_id;
 	}
 
-	public void setMarket_id(String market_id) {
+	public void setMarket_id(long market_id) {
 		this.market_id = market_id;
 	}
 

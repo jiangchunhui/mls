@@ -6,7 +6,9 @@
     </sql>
 
     <select id="getGroupList" resultType="com.sf.bgp.dao.domain.Group" >
-        select <include refid="Base_Column_List" /> from  pro_group_base
+
+          select <include refid="Base_Column_List" /> from  pro_group_base <![CDATA[ WHERE finish = 0 AND start_time < now() AND end_time > NOW()
+         ]]>
     </select>
 
     <select id="getGroupDetailsById" resultType="com.sf.bgp.domain.Group" >
@@ -18,7 +20,20 @@
     </select>
 
     <insert id="addGroupUser" parameterType="com.sf.bgp.domain.GroupUser">
-        insert into user(group_id,user_id,address_1,address_2,name,mobile,expect_sum,user_id,avg_weight,created_time)
-         values (#{group_id},#{user_id},#{address_1},#{address_2},#{name},#{mobile},#{expect_sum},#{avg_weight},now())
+        insert into pro_group_user(group_id,user_id,address_1,address_2,name,mobile,expect_sum,avg_weight,created_time)  values (#{group_id},#{user_id},#{address_1},#{address_2},#{name},#{mobile},#{expect_sum},#{avg_weight},now())
     </insert>
+
+    <select id="getExpireGroup" resultType="com.sf.bgp.domain.Group" >
+
+        select <include refid="Base_Column_List" /> from  pro_group_base <![CDATA[ WHERE finish = 0 AND end_time <= NOW();]]>
+
+    </select>
+
+    <insert id="addGroup" parameterType="com.sf.bgp.domain.Group">
+        insert into pro_group_base(market_id,group_name,current_count,start_time,end_time,banner,created_time) values (#{market_id},#{group_name},#{current_count},#{start_time},#{end_time},#{banner},now())
+    </insert>
+
+    <update id="updateFinishStatus">
+       UPDATE pro_group_base SET finish = #{finish}   WHERE id = #{id} AND finish = 0
+    </update>
 </mapper>

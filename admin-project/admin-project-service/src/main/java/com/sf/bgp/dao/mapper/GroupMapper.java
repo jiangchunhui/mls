@@ -15,4 +15,10 @@ public interface GroupMapper {
 	List<GroupUser> getGroupUserByGroupId(@Param("group_id") long groupId);
 
 	int addGroupUser(GroupUser groupUser);
+
+	List<Group> getExpireGroup();
+
+	int addGroup(Group group);
+
+	int updateFinishStatus(@Param("id") long id,@Param("finish") int finish);
 }

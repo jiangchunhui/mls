@@ -40,7 +40,7 @@ public class UserRestServiceImpl implements UserRestService {
             user.setPortrait("http://10.2.4.129/UI/%E6%89%80%E9%9C%80%E5%9B%BE%E6%A0%87/%E4%BA%BA@2x.png");
             userMapper.addUser(user);
         }
-        result.setObj(JSON.toJSONString(user));
+        result.setObj(String.valueOf(user.getId()));
         return result;
     }
 }

@@ -5,19 +5,19 @@ import java.util.Date;
 
 public class Market implements Serializable{
 	private long id;
-	private String mkt_id; // 用户名
-	private String mkt_name_show;//头像
-	private int daily_min_packages;//头像
-	private double weight_min;//头像
-	private double weight_max;//头像
-	private double base_price;//头像
-	private double base_weight;//头像
-	private int group_limit;//头像
-	private int group_duration;//头像
-	private String use_require;//头像
-	private String banner;//头像
-	private Date created_time;//头像
-	private Date modifed_time;//头像
+	private String mkt_id;
+	private String mkt_name_show;
+	private int daily_min_packages;
+	private double weight_min;
+	private double weight_max;
+	private double base_price;
+	private double base_weight;
+	private int group_limit;
+	private int group_duration;
+	private String use_require;
+	private String banner;
+	private Date created_time;
+	private Date modifed_time;
 
 	public long getId() {
 		return id;
