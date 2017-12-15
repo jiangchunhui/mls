@@ -1,0 +1,6 @@
+framework module SFScan {
+  umbrella header "SFScan.h"
+
+  export *
+  module * { export * }
+}
