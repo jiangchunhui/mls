@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/tab_bg">
+
+        <FrameLayout
+            android:id="@+id/lyHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btHome"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="@drawable/tab_home_normal"
+                android:gravity="center"
+                android:textSize="8sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lyNotice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btNotice"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="@drawable/tab_micro_normal"
+                android:gravity="center"
+                android:textSize="8sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lyMine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btMine"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="@drawable/tab_me_normal"
+                android:gravity="center"
+                android:textSize="8sp" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
