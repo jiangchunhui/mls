@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Color_C">#7a888b</color>
+    <color name="Color_D">#FFFFFF</color>
+    <color name="Color_E">#ff1010</color>
+    <color name="Color_F">#f0f0f0</color>
+    <color name="Color_G">#ededed</color>
+    <color name="Color_L">#ff7200</color>
+    <color name="Color_N">#7a888a</color>
+    <color name="Color_coefficient">#f6faff</color>
+    <color name="Color_gray_new">#FFF0F0</color>
+    <color name="Color_jobNumber">#f7f7fa</color>
+    <color name="Color_new_B">#858585</color>
+    <color name="Color_new_C">#f1474e</color>
+    <color name="Color_new_D">#2290ed</color>
+    <color name="Color_new_J">#e2e2ea</color>
+    <color name="Color_new_K">#419ada</color>
+    <color name="Color_new_M">#000000</color>
+    <color name="Color_new_N">#7a888a</color>
+    <color name="Color_new_O">#aeaeae</color>
+    <color name="Color_new_z">#999999</color>
+    <color name="Color_prompt">#868686</color>
+    <color name="accent">#D92E2D</color>
+    <color name="black">#000000</color>
+    <color name="blueBtnNormal">#2289FF</color>
+    <color name="blueBtnPress">#3f88c7</color>
+    <color name="colorA">#aeaeae</color>
+    <color name="colorB">#2289ff</color>
+    <color name="cutlineColor">#cccccc</color>
+    <color name="excCodeColor">#6C94B6</color>
+    <color name="focus_shadow">#0094ff</color>
+    <color name="forbidBgColor">#bebebe</color>
+    <color name="forbidTextColor">#ebebf2</color>
+    <color name="grey300">#AEAEAE</color>
+    <color name="grey400">#999999</color>
+    <color name="grey500">#7A888B</color>
+    <color name="labelB">#2290ED</color>
+    <color name="labelC">#6C94B6</color>
+    <color name="labelD">#7193EA</color>
+    <color name="labelDispatch">#2289ff</color>
+    <color name="labelE">#FF1010</color>
+    <color name="labelPackage">#FF7200</color>
+    <color name="labelPickup">#17A331</color>
+    <color name="line2">#3e3e3e</color>
+    <color name="menuEight">#3bcd98</color>
+    <color name="menuFive">#8892f7</color>
+    <color name="menuFour">#aa81ee</color>
+    <color name="menuNine">#a1cc29</color>
+    <color name="menuOne">#fb8282</color>
+    <color name="menuSeven">#03c8cf</color>
+    <color name="menuSix">#77b7ff</color>
+    <color name="menuThree">#f6ba5c</color>
+    <color name="menuTwo">#ff83b5</color>
+    <color name="new_blue">#2290ed</color>
+    <color name="primary">#1c1c1c</color>
+    <color name="primaryDark">#000000</color>
+    <color name="redBtnNormal">#FF1010</color>
+    <color name="redBtnPress">#CC0000</color>
+    <color name="textPrimary">#333333</color>
+    <color name="tipsColor">#ff8787</color>
+    <color name="transparent">#00000000</color>
+    <color name="warningColor">#ff1010</color>
+    <color name="white">#FFFFFF</color>
+    <color name="windowBackground">#F2F2F2</color>
+    <string name="cas_get_ticket_fail">获取ticket失败</string>
+    <string name="cas_login_fail">登录失败</string>
+    <string name="cas_login_timeout">登录超时</string>
+    <string name="cas_network_error">网络错误</string>
+    <string name="cas_server_error">服务器错误</string>
+    <string name="cas_username_is_locked">账号被锁定</string>
+    <string name="cas_username_not_find">账号不存在</string>
+    <string name="cas_username_or_pwd_error">用户名或密码错误</string>
+    <string name="change_4G_mode">切换4G模式</string>
+    <string name="input_employe_number">请输入工号</string>
+    <string name="error_token_openid">token 或者 openId为空</string>
+    <string name="error_user_exist">获取用户信息失败</string>
+    <string name="error_not_find_cas_url">cas登录host地址获取失败，请在manifest中设置</string>
+    <string name="login">登录</string>
+    <string name="input_password">请输入密码</string>
+    <string name="password_is_empty">密码不能为空,请重新输入</string>
+    <string name="retrieve_password">找回密码</string>
+    <string name="username_is_empty">工号输入有误,请重新输入</string>
+    <string name="username_count_err">工号位数错误，请重新输入</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

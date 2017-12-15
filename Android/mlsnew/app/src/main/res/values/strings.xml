@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AiUser</string>
+    <string name="string_return_is_null">返回结果为空</string>
+    <string name="is_login">正在登录...</string>
+    <string name="input_verification">输入验证码</string>
+    <string name="get_verification">获取验证码</string>
+    <string name="pwd_hint">不少于8位 （数字+字母或符号）</string>
+    <string name="commit">提交</string>
+    <string name="repeat_send">重新获取</string>
+    <string name="count_text">%1$s  s</string>
+    <string name="please_input_true">请输入正确的工号</string>
+    <string name="user_verification_code_already_send_to_phone">验证码已发送至工号绑定的手机</string>
+    <string name="reset_pwd_success">修改密码成功</string>
+    <string name="reset_pwd_failed">修改密码失败</string>
+    <string name="please_input_true_pwd">请输入正确的密码</string>
+    <string name="please_input_true_verCode">请输入正确的验证码</string>
+</resources>
