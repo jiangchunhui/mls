@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sf.bgp.dao.mapper.MarketMapper" >
+    <sql id="Base_Column_List" >
+        id,mkt_id,mkt_name_show,daily_min_packages,weight_min,weight_max,base_price,base_weight,group_limit,group_duration,use_require,banner,created_time,modifed_time
+    </sql>
+
+    <select id="getMarketList" resultType="com.sf.bgp.dao.domain.Market" >
+        select <include refid="Base_Column_List" /> from user pro_market_base
+    </select>
+
+    <select id="getMarketDetails" resultType="com.sf.bgp.dao.domain.Market" >
+        select <include refid="Base_Column_List" /> from pro_market_base WHERE id = #{marketId}
+    </select>
+</mapper>

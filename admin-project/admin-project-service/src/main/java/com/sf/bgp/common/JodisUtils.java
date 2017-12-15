@@ -85,7 +85,7 @@ public class JodisUtils implements InitializingBean{
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        jedisResourcePool =  RoundRobinJedisPool.create().curatorClient(zk, zkSessionTimeout).zkProxyDir(proxyPath).build();
+        //jedisResourcePool =  RoundRobinJedisPool.create().curatorClient(zk, zkSessionTimeout).zkProxyDir(proxyPath).build();
     }
 
     public static void main(String[] args) {

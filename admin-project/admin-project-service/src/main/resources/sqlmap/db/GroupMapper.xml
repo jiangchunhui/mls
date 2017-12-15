@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sf.bgp.dao.mapper.GroupMapper" >
+    <sql id="Base_Column_List" >
+        id,market_id,group_name,current_count,start_time,end_time,banner,finish,created_time,modifed_time
+    </sql>
+
+    <select id="getGroupList" resultType="com.sf.bgp.dao.domain.Group" >
+        select <include refid="Base_Column_List" /> from  pro_group_base
+    </select>
+
+    <select id="getGroupDetailsById" resultType="com.sf.bgp.domain.Group" >
+        select <include refid="Base_Column_List" /> from  pro_group_base WHERE id = #{id}
+    </select>
+
+    <select id="getGroupUserByGroupId" resultType="com.sf.bgp.domain.GroupUser" >
+        select group_id,user_id from  pro_group_user WHERE group_id = #{group_id}
+    </select>
+
+    <insert id="addGroupUser" parameterType="com.sf.bgp.domain.GroupUser">
+        insert into user(group_id,user_id,address_1,address_2,name,mobile,expect_sum,user_id,avg_weight,created_time)
+         values (#{group_id},#{user_id},#{address_1},#{address_2},#{name},#{mobile},#{expect_sum},#{avg_weight},now())
+    </insert>
+</mapper>

@@ -2,11 +2,19 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.sf.bgp.dao.mapper.UserMapper" >
     <sql id="Base_Column_List" >
-        id,username,password,age,name,email,phone
+        id,username,portrait
     </sql>
 
     <select id="getUser" resultType="com.sf.bgp.dao.domain.User" >
-        select <include refid="Base_Column_List" /> from user where  username = #{username} AND  password = #{password}
+        select <include refid="Base_Column_List" /> from user where  username = #{username}
+    </select>
+
+    <insert id="addUser" parameterType="com.sf.bgp.dao.domain.User">
+        insert into user(username,portrait) values (#{username},#{portrait})
+    </insert>
+
+    <select id="getUserById" resultType="com.sf.bgp.dao.domain.User" >
+        select <include refid="Base_Column_List" /> from user where  id = #{id}
     </select>
 
 </mapper>

@@ -28,16 +28,18 @@ public class UserRestServiceImpl implements UserRestService {
     @Override
     public Result<String> dologin(UserInfo userInfo) {
         Result<String> result =  new Result<String>(true);
-        if(userInfo == null || StringUtils.isEmpty(userInfo.getUsername()) || StringUtils.isEmpty(userInfo.getPassword())){
+        if(userInfo == null || StringUtils.isEmpty(userInfo.getUsername())){
             result.setSuccess(false);
             result.setErrorMessage("param is error");
             return result;
         }
-        User user = userMapper.getUser(userInfo.getUsername(),userInfo.getPassword());
+        User user = userMapper.getUser(userInfo.getUsername());
         if(user == null){
-            result.setSuccess(false);
-            result.setErrorMessage("user is not exist");
-            return result;
+            //新增一个用户
+            user = new User();
+            user.setUsername(userInfo.getUsername());
+            user.setPortrait("http://10.2.4.129/UI/%E6%89%80%E9%9C%80%E5%9B%BE%E6%A0%87/%E4%BA%BA@2x.png");
+            userMapper.addUser(user);
         }
         result.setObj(JSON.toJSONString(user));
         return result;

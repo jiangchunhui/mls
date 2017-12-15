@@ -24,6 +24,7 @@
 	<dubbo:protocol name="rest" port="6968" threads="500" contextpath="ananlyser" server="tomcat" accepts="500"/>
 	<dubbo:service interface="com.sf.bgp.client.PushQueryRestService" ref="pushQueryRestServiceImpl" protocol="rest" validation="true" document="push"/>
 	<dubbo:service interface="com.sf.bgp.client.UserRestService" ref="userRestServiceImpl" protocol="rest" validation="true" document="user"/>
+	<dubbo:service interface="com.sf.bgp.client.MarketRestService" ref="marketRestServiceImpl" protocol="rest" validation="true" document="market"/>
 
 
 </beans>
