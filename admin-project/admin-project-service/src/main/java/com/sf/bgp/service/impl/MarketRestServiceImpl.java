@@ -90,7 +90,7 @@ public class MarketRestServiceImpl implements MarketRestService {
                 return result;
             }
             //插入用户参团
-            int res = groupMapper.addGroupUser(groupUser);
+            groupMapper.addGroupUser(groupUser);
             return result;
         }catch (Exception e){
             log.error("getMarketList error:{}.",e.getMessage());

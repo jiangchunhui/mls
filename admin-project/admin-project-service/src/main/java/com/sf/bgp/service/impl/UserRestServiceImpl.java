@@ -3,7 +3,6 @@ package com.sf.bgp.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.sf.bgp.client.UserRestService;
 import com.sf.bgp.dao.domain.User;
-import com.sf.bgp.dao.mapper.PushStatistsMapper;
 import com.sf.bgp.dao.mapper.UserMapper;
 import com.sf.bgp.domain.UserInfo;
 import com.sf.framework.domain.Result;

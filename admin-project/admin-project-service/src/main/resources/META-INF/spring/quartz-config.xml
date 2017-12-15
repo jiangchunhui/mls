@@ -7,27 +7,27 @@
        xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:tx="http://www.springframework.org/schema/tx">
 
-    <!-- 延时扫漏执行任务 -->
-    <bean id="delayTaskExecutorJob" class="com.sf.bgp.job.DelayTaskExecutorJob">
-        <property name="delayTaskService" ref="delayTaskService"></property>
+    <!-- 团购过期执行任务 -->
+    <bean id="expireTaskExecutorJob" class="com.sf.bgp.job.ExpireTaskExecutorJob">
+        <property name="expireTaskService" ref="expireTaskService"></property>
     </bean>
     <!-- 引用，配置要运行的方法 -->
-    <bean id="delayTaskExecutorJobDetail"
+    <bean id="expireTaskExecutorJobDetail"
           class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
         <property name="targetObject">
-            <ref bean="delayTaskExecutorJob"/>
+            <ref bean="expireTaskExecutorJob"/>
         </property>
         <property name="concurrent" value="false"/>
         <property name="targetMethod" value="execute"/>
     </bean>
     <!-- 引用，配置触发任务调用时间 -->
-    <bean id="delayTaskExecutorJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+    <bean id="expireTaskExecutorJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
         <property name="jobDetail">
-            <ref bean="delayTaskExecutorJobDetail"/>
+            <ref bean="expireTaskExecutorJobDetail"/>
         </property>
         <property name="cronExpression">
             <!--秒 分 时 天 月  星期 年 每隔5分钟执行-->
-            <value>0 0/5 * * * ?</value>
+            <value>0 0/1 * * * ?</value>
         </property>
     </bean>
 
@@ -37,7 +37,7 @@
     <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
         <property name="triggers">
             <list>
-                <!--<ref local="delayTaskExecutorJobTrigger" />-->
+                <ref local="expireTaskExecutorJobTrigger" />
             </list>
         </property>
     </bean>
