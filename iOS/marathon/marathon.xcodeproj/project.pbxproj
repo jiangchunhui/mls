@@ -15,11 +15,19 @@
 		EA13FAF81FE22ADE004301D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FAF71FE22ADE004301D9 /* main.m */; };
 		EA13FB021FE22ADE004301D9 /* marathonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB011FE22ADE004301D9 /* marathonTests.m */; };
 		EA13FB0D1FE22ADE004301D9 /* marathonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB0C1FE22ADE004301D9 /* marathonUITests.m */; };
-		EA13FB211FE267C3004301D9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB1E1FE267C3004301D9 /* FirstViewController.m */; };
-		EA13FB221FE267C3004301D9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB1F1FE267C3004301D9 /* SecondViewController.m */; };
-		EA13FB251FE26810004301D9 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB241FE26810004301D9 /* PersonalViewController.m */; };
-		EA13FB281FE2681D004301D9 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB271FE2681D004301D9 /* ThirdViewController.m */; };
+		EA13FB211FE267C3004301D9 /* JHInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB1E1FE267C3004301D9 /* JHInfoController.m */; };
+		EA13FB221FE267C3004301D9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB1F1FE267C3004301D9 /* LoginViewController.m */; };
+		EA13FB251FE26810004301D9 /* JoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB241FE26810004301D9 /* JoinViewController.m */; };
+		EA13FB281FE2681D004301D9 /* JHListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB271FE2681D004301D9 /* JHListViewController.m */; };
 		EA13FB2B1FE269B7004301D9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB2A1FE269B7004301D9 /* Person.m */; };
+		EA13FB361FE36C7A004301D9 /* NaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB351FE36C7A004301D9 /* NaviViewController.m */; };
+		EA13FB3D1FE3A378004301D9 /* SFScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA13FB381FE3A367004301D9 /* SFScan.framework */; };
+		EA13FB3E1FE3A378004301D9 /* SFScan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA13FB381FE3A367004301D9 /* SFScan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA13FB481FE3B974004301D9 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB421FE3B974004301D9 /* CityModel.m */; };
+		EA13FB491FE3B974004301D9 /* ProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB451FE3B974004301D9 /* ProvinceModel.m */; };
+		EA13FB4A1FE3B974004301D9 /* AreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB471FE3B974004301D9 /* AreaModel.m */; };
+		EA13FB4C1FE3BC15004301D9 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA13FB4B1FE3BC15004301D9 /* area.plist */; };
+		EA13FB4F1FE3C9CD004301D9 /* CodeGenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13FB4E1FE3C9CD004301D9 /* CodeGenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EA13FB3F1FE3A378004301D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EA13FB3E1FE3A378004301D9 /* SFScan.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		40683D8F28805C426E7CF159 /* libPods-marathon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-marathon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		898A90DF39FEFEAA8A25AD33 /* Pods-marathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-marathon/Pods-marathon.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,16 +79,28 @@
 		EA13FB081FE22ADE004301D9 /* marathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA13FB0C1FE22ADE004301D9 /* marathonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = marathonUITests.m; sourceTree = "<group>"; };
 		EA13FB0E1FE22ADE004301D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA13FB1C1FE267C3004301D9 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		EA13FB1D1FE267C3004301D9 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		EA13FB1E1FE267C3004301D9 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		EA13FB1F1FE267C3004301D9 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		EA13FB231FE26810004301D9 /* PersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
-		EA13FB241FE26810004301D9 /* PersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
-		EA13FB261FE2681D004301D9 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		EA13FB271FE2681D004301D9 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		EA13FB1C1FE267C3004301D9 /* JHInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHInfoController.h; sourceTree = "<group>"; };
+		EA13FB1D1FE267C3004301D9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		EA13FB1E1FE267C3004301D9 /* JHInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHInfoController.m; sourceTree = "<group>"; };
+		EA13FB1F1FE267C3004301D9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EA13FB231FE26810004301D9 /* JoinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JoinViewController.h; sourceTree = "<group>"; };
+		EA13FB241FE26810004301D9 /* JoinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JoinViewController.m; sourceTree = "<group>"; };
+		EA13FB261FE2681D004301D9 /* JHListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHListViewController.h; sourceTree = "<group>"; };
+		EA13FB271FE2681D004301D9 /* JHListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHListViewController.m; sourceTree = "<group>"; };
 		EA13FB291FE269B7004301D9 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		EA13FB2A1FE269B7004301D9 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EA13FB341FE36C7A004301D9 /* NaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaviViewController.h; sourceTree = "<group>"; };
+		EA13FB351FE36C7A004301D9 /* NaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaviViewController.m; sourceTree = "<group>"; };
+		EA13FB381FE3A367004301D9 /* SFScan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SFScan.framework; sourceTree = "<group>"; };
+		EA13FB421FE3B974004301D9 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		EA13FB431FE3B974004301D9 /* ProvinceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceModel.h; sourceTree = "<group>"; };
+		EA13FB441FE3B974004301D9 /* AreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaModel.h; sourceTree = "<group>"; };
+		EA13FB451FE3B974004301D9 /* ProvinceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceModel.m; sourceTree = "<group>"; };
+		EA13FB461FE3B974004301D9 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		EA13FB471FE3B974004301D9 /* AreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaModel.m; sourceTree = "<group>"; };
+		EA13FB4B1FE3BC15004301D9 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		EA13FB4D1FE3C9CD004301D9 /* CodeGenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeGenViewController.h; sourceTree = "<group>"; };
+		EA13FB4E1FE3C9CD004301D9 /* CodeGenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeGenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA13FB3D1FE3A378004301D9 /* SFScan.framework in Frameworks */,
 				D37857BED02B8FE40E46AC02 /* libPods-marathon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +172,8 @@
 		EA13FAE41FE22ADE004301D9 /* marathon */ = {
 			isa = PBXGroup;
 			children = (
+				EA13FB401FE3B974004301D9 /* Vendors */,
+				EA13FB371FE3A367004301D9 /* Frameworks */,
 				EA13FB1B1FE267C3004301D9 /* Controllers */,
 				EA13FB201FE267C3004301D9 /* Models */,
 				EA13FB1A1FE267C3004301D9 /* Views */,
@@ -145,6 +182,7 @@
 				EA13FAEE1FE22ADE004301D9 /* Main.storyboard */,
 				EA13FAF11FE22ADE004301D9 /* Assets.xcassets */,
 				EA13FAF31FE22ADE004301D9 /* LaunchScreen.storyboard */,
+				EA13FB4B1FE3BC15004301D9 /* area.plist */,
 				EA13FAF61FE22ADE004301D9 /* Info.plist */,
 				EA13FAF71FE22ADE004301D9 /* main.m */,
 			);
@@ -179,14 +217,18 @@
 		EA13FB1B1FE267C3004301D9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EA13FB1C1FE267C3004301D9 /* FirstViewController.h */,
-				EA13FB1E1FE267C3004301D9 /* FirstViewController.m */,
-				EA13FB1D1FE267C3004301D9 /* SecondViewController.h */,
-				EA13FB1F1FE267C3004301D9 /* SecondViewController.m */,
-				EA13FB261FE2681D004301D9 /* ThirdViewController.h */,
-				EA13FB271FE2681D004301D9 /* ThirdViewController.m */,
-				EA13FB231FE26810004301D9 /* PersonalViewController.h */,
-				EA13FB241FE26810004301D9 /* PersonalViewController.m */,
+				EA13FB1C1FE267C3004301D9 /* JHInfoController.h */,
+				EA13FB1E1FE267C3004301D9 /* JHInfoController.m */,
+				EA13FB1D1FE267C3004301D9 /* LoginViewController.h */,
+				EA13FB1F1FE267C3004301D9 /* LoginViewController.m */,
+				EA13FB261FE2681D004301D9 /* JHListViewController.h */,
+				EA13FB271FE2681D004301D9 /* JHListViewController.m */,
+				EA13FB231FE26810004301D9 /* JoinViewController.h */,
+				EA13FB241FE26810004301D9 /* JoinViewController.m */,
+				EA13FB341FE36C7A004301D9 /* NaviViewController.h */,
+				EA13FB351FE36C7A004301D9 /* NaviViewController.m */,
+				EA13FB4D1FE3C9CD004301D9 /* CodeGenViewController.h */,
+				EA13FB4E1FE3C9CD004301D9 /* CodeGenViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -198,6 +240,35 @@
 				EA13FB2A1FE269B7004301D9 /* Person.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EA13FB371FE3A367004301D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA13FB381FE3A367004301D9 /* SFScan.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA13FB401FE3B974004301D9 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				EA13FB411FE3B974004301D9 /* AddPicker */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		EA13FB411FE3B974004301D9 /* AddPicker */ = {
+			isa = PBXGroup;
+			children = (
+				EA13FB441FE3B974004301D9 /* AreaModel.h */,
+				EA13FB471FE3B974004301D9 /* AreaModel.m */,
+				EA13FB461FE3B974004301D9 /* CityModel.h */,
+				EA13FB421FE3B974004301D9 /* CityModel.m */,
+				EA13FB431FE3B974004301D9 /* ProvinceModel.h */,
+				EA13FB451FE3B974004301D9 /* ProvinceModel.m */,
+			);
+			path = AddPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +284,7 @@
 				EA13FAE01FE22ADE004301D9 /* Resources */,
 				C0D5BD7A389F22B5C86C532A /* [CP] Embed Pods Frameworks */,
 				E8CD0827C0E2047FA0D565DA /* [CP] Copy Pods Resources */,
+				EA13FB3F1FE3A378004301D9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA13FAF51FE22ADE004301D9 /* LaunchScreen.storyboard in Resources */,
+				EA13FB4C1FE3BC15004301D9 /* area.plist in Resources */,
 				EA13FAF21FE22ADE004301D9 /* Assets.xcassets in Resources */,
 				EA13FAF01FE22ADE004301D9 /* Main.storyboard in Resources */,
 			);
@@ -390,12 +463,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA13FB221FE267C3004301D9 /* SecondViewController.m in Sources */,
+				EA13FB221FE267C3004301D9 /* LoginViewController.m in Sources */,
+				EA13FB491FE3B974004301D9 /* ProvinceModel.m in Sources */,
+				EA13FB481FE3B974004301D9 /* CityModel.m in Sources */,
 				EA13FAE71FE22ADE004301D9 /* AppDelegate.m in Sources */,
 				EA13FB2B1FE269B7004301D9 /* Person.m in Sources */,
-				EA13FB281FE2681D004301D9 /* ThirdViewController.m in Sources */,
-				EA13FB211FE267C3004301D9 /* FirstViewController.m in Sources */,
-				EA13FB251FE26810004301D9 /* PersonalViewController.m in Sources */,
+				EA13FB281FE2681D004301D9 /* JHListViewController.m in Sources */,
+				EA13FB361FE36C7A004301D9 /* NaviViewController.m in Sources */,
+				EA13FB4A1FE3B974004301D9 /* AreaModel.m in Sources */,
+				EA13FB211FE267C3004301D9 /* JHInfoController.m in Sources */,
+				EA13FB251FE26810004301D9 /* JoinViewController.m in Sources */,
+				EA13FB4F1FE3C9CD004301D9 /* CodeGenViewController.m in Sources */,
 				EA13FAF81FE22ADE004301D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,9 +640,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94474947CR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/marathon/Frameworks",
+				);
 				INFOPLIST_FILE = marathon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/marathon/Vendors/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peoeleSameWay.marathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,9 +664,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94474947CR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/marathon/Frameworks",
+				);
 				INFOPLIST_FILE = marathon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/marathon/Vendors/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peoeleSameWay.marathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
