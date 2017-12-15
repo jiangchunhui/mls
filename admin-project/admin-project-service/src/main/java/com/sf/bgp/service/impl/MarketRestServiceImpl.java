@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.sf.bgp.client.MarketRestService;
+import com.sf.bgp.common.DateUtil;
 import com.sf.bgp.dao.domain.User;
 import com.sf.bgp.dao.mapper.UserMapper;
 import com.sf.bgp.domain.Group;
@@ -17,6 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -88,6 +90,26 @@ public class MarketRestServiceImpl implements MarketRestService {
                 result.setSuccess(false);
                 result.setErrorMessage("groupUser is null");
                 return result;
+            }
+            //判断是否满团
+            List<GroupUser> groupUserList = groupMapper.getGroupUserByGroupId(groupUser.getGroup_id());
+            Group group =  groupMapper.getGroupDetailsById(groupUser.getGroup_id());
+            if(groupUserList != null && group != null){
+                Market market = marketMapper.getMarketDetails(group.getMarket_id());
+                if(market != null && groupUserList.size() == market.getGroup_limit()){
+                    Group  newGroup = new Group();
+                    newGroup.setMarket_id(group.getMarket_id());
+                    newGroup.setCurrent_count(group.getCurrent_count()+1);
+                    newGroup.setGroup_name(market.getMkt_name_show()+newGroup.getCurrent_count());
+                    newGroup.setStart_time(new Date());
+                    newGroup.setEnd_time(DateUtil.getCurrentTimeBeforeDay(newGroup.getStart_time(),market.getGroup_duration()));
+                    newGroup.setBanner(group.getBanner());
+                    groupMapper.addGroup(newGroup);
+                    //把完成状态设置为1完成
+                    groupMapper.updateFinishStatus(group.getId(),1);
+                    //设置group为当前的
+                    groupUser.setGroup_id(newGroup.getId());
+                }
             }
             //插入用户参团
             groupMapper.addGroupUser(groupUser);

@@ -6,9 +6,7 @@
     </sql>
 
     <select id="getGroupList" resultType="com.sf.bgp.dao.domain.Group" >
-
-          select <include refid="Base_Column_List" /> from  pro_group_base <![CDATA[ WHERE finish = 0 AND start_time < now() AND end_time > NOW()
-         ]]>
+          select <include refid="Base_Column_List" /> from  pro_group_base <![CDATA[ WHERE finish = 0 AND start_time < now() AND end_time > NOW() ]]>
     </select>
 
     <select id="getGroupDetailsById" resultType="com.sf.bgp.domain.Group" >
@@ -30,10 +28,13 @@
     </select>
 
     <insert id="addGroup" parameterType="com.sf.bgp.domain.Group">
+        <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
         insert into pro_group_base(market_id,group_name,current_count,start_time,end_time,banner,created_time) values (#{market_id},#{group_name},#{current_count},#{start_time},#{end_time},#{banner},now())
     </insert>
 
     <update id="updateFinishStatus">
-       UPDATE pro_group_base SET finish = #{finish}   WHERE id = #{id} AND finish = 0
+       UPDATE pro_group_base SET finish = #{finish},modifed_time = now()   WHERE id = #{id} AND finish = 0
     </update>
 </mapper>

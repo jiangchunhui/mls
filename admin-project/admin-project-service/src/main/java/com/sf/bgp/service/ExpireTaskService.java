@@ -40,10 +40,10 @@ public class ExpireTaskService {
 				newGroup.setCurrent_count(group.getCurrent_count()+1);
 				newGroup.setGroup_name(market.getMkt_name_show()+newGroup.getCurrent_count());
 				newGroup.setStart_time(new Date());
-				newGroup.setEnd_time(DateUtil.getCurrentTimeBeforeDay(newGroup.getStart_time(),2));
+				newGroup.setEnd_time(DateUtil.getCurrentTimeBeforeDay(newGroup.getStart_time(),market.getGroup_duration()));
 				newGroup.setBanner(group.getBanner());
 				groupMapper.addGroup(newGroup);
-				//把完成状态设置为2
+				//把完成状态设置为2结束
 				groupMapper.updateFinishStatus(group.getId(),2);
 			}
 		}catch (Exception e){
